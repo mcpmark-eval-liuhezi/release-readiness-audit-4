@@ -1,0 +1,11 @@
+name: Smoke test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo smoke message
+        run: echo "Release readiness audit: Actions smoke test executed successfully."
